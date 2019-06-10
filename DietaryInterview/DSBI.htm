@@ -1,0 +1,1353 @@
+﻿<!DOCTYPE html><html xml:lang="en" lang="en" xmlns="http://www.w3c.org/1999/xhtml" xmlns:dt="urn:schemas-microsoft-com:datatypes">
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <style type="text/css">
+					body { font: 75% Verdana, Arial, Helvetica, sans-serif; }
+
+					h1 {
+					color: #0c5205;
+					font-family: "Trebuchet MS", Arial, sans-serif;
+					font-size: 2em;
+					font-weight: normal;
+					margin-bottom: 10px;
+					margin-top: 0;
+					}
+
+					h2 {
+					color: #0c5205;
+					font-family: "Trebuchet MS", Arial, sans-serif;
+					font-size: 1.6em;
+					font-weight: normal;
+					}
+
+					h3 {
+					color: #000;
+					font-family: "Trebuchet MS", Arial, sans-serif;
+					font-size: 1.5em;
+					font-weight: normal;
+					}
+
+					h3.vartitle {
+					background-color: #c1d5b0;
+					padding: 6px 12px;
+					}
+
+					h4 {
+					color: #000;
+					font-family: "Trebuchet MS", Arial, sans-serif;
+					font-size: 1.3em;
+					font-weight: bold;
+					}
+
+					h5 {
+					color: #000;
+					font-family: Verdana, Arial, Helvetica, sans-serif;
+					font-size: 1em;
+					font-weight: bold;
+					}
+
+					h5.specialnote {
+					color: #000;
+					font-family: Verdana, Arial, Helvetica, sans-serif;
+					font-size: 1.2em;
+					font-style: italic;
+					font-weight: bold;
+					}
+
+					a {
+					color: #039;
+					text-decoration: none;
+					}
+
+					p {
+					font-family: Verdana, Arial, Helvetica, sans-serif;
+					font-size: 1em;
+					line-height: 1.33em;
+					margin: 0 3em 1em;
+					padding: 0;
+					text-align: left;
+					}
+
+					ul {
+					list-style-type: disc;
+					margin: 0 3em 1em;
+					padding: 0;
+					}
+
+					ol {
+					list-style-type: decimal;
+					margin: 0;
+					overflow: hidden;
+					padding: 0;
+					padding-left: 2em;
+					}
+
+					li {
+					margin-left: 1.5em;
+					margin-top: 0.7em;
+					}
+
+					table {
+					border: #000 1px solid;
+					border-collapse: collapse;
+					margin: 0 auto 1em;
+					max-width: 600px;
+					padding: 2px;
+					table-layout: auto;
+					}
+
+					th {
+					background: #f4f4e1;
+					border: #000 1px solid;
+					font-family: Verdana, Arial, Helvetica, sans-serif;
+					padding: 5px;
+					text-align: center;
+					vertical-align: top;
+					}
+
+					th.rowheader {
+					background: #f4f4e1;
+					border: #000 1px solid;
+					font-family: Verdana, Arial, Helvetica, sans-serif;
+					padding: 5px;
+					text-align: center;
+					vertical-align: top;
+					}
+
+					td {
+					border: #000 1px solid;
+					font-family: Verdana, Arial, Helvetica, sans-serif;
+					padding: 5px;
+					text-align: left;
+					vertical-align: top;
+					}
+
+					td.values2 {
+					text-align: RIGHT;
+					vertical-align: top;
+					}
+
+					table caption {
+					font-weight: bold;
+					padding-bottom: 0.5em;
+					}
+
+					div#wrapper { width: 650px; }
+
+					div#toc {
+					border: solid 1px #CCC;
+					float: left;
+					height: 95%;
+					left: 750px;
+					overflow: hidden;
+					position: fixed;
+					top: 10px;
+					width: 400px;
+					z-index: 10;
+					}
+
+					div#toc h3 {
+					background-color: #f4f4e1;
+					border-bottom: solid 1px #ccc;
+					letter-spacing: 8px;
+					margin: 0;
+					padding: 8px;
+					text-align: center;
+					text-transform: uppercase;
+					}
+
+					div#toc-scroll {
+					height: calc(100% - 1.5em);
+					overflow: scroll;
+					width: 100%;
+					}
+
+					div#toc li {
+					margin-left: -0.5em;
+					margin-right: -0.5em;
+					}
+
+					div#PageHeader {
+					border-bottom: thin solid #999;
+					margin-bottom: 12px;
+					width: 650px;
+					}
+
+					div#Sections { width: 650px; }
+
+					div#Sections table { page-break-inside: avoid; }
+
+					div#Codebook {
+					width: 650px;
+					page-break-after: always;
+					}
+
+					div#Codebook dl {
+					margin: 2em 0 10px 40px;
+					padding: 0;
+					width: 600px;
+					display: table;
+					}
+
+					div#Codebook dt {
+					float: left;
+					font-weight: bold;
+					margin: 0;
+					padding: 0.5em;
+					width: 150px;
+					display: table-cell;
+					}
+
+					div#Codebook dd {
+					float: left;
+					margin: 0;
+					padding: 0.5em;
+					width: 420px;
+					display: table-cell;
+					}
+
+					div#References {
+					page-break-after: always;
+					width: 650px;
+					}
+
+					div#Appendix {
+					page-break-after: always;
+					width: 650px;
+					}
+
+					table.values {
+					border: 2px;
+					left: 20px;
+					margin-bottom: 20px;
+					position: relative;
+					width: 600px;
+					}
+
+					span.file-size { color: gray; }
+
+					.pagebreak {
+					background-color: transparent;
+					display: block;
+					page-break-after: always;
+					page-break-inside: avoid;
+					}
+				</style>
+    <style type="text/css" media="print">
+					div#toc { display: none; }
+				</style><!----><meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="Keywords" content="Surveys,Data Collection,NCHS,NHANES,National Health and Nutrition Examination Survey,data,documentation,Dietary Supplement Database - Blend Information" />
+    <meta name="DC.Subject" content="NHANES 1999-2014: Dietary Supplement Database - Blend Information Data Documentation" />
+    <meta name="DC.Language" scheme="ISO 639-2" content="eng" />
+    <link rel="Prev" Title="NHANES 1999-2014 Dietary page" href="https://www.cdc.gov/nchs/nhanes/1999-2014/nhanes99_14.htm">
+      <title>
+						NHANES 1999-2014:
+						Dietary Supplement Database - Blend Information Data Documentation, Codebook, and Frequencies</title>
+    </link>
+  </head>
+  <body>
+    <div id="toc">
+      <h3>Table of Contents</h3>
+      <div id="toc-scroll">
+        <ul>
+          <li>
+            <a href="#Component_Description">Component Description</a>
+          </li>
+          <li>
+            <a href="#Data_Processing_and_Editing">Data Processing and Editing</a>
+          </li>
+          <li>
+            <a href="#Analytic_Notes">Analytic Notes</a>
+          </li>
+          <li>
+            <a href="#Codebook">Codebook</a>
+            <div id="CodebookLinks">
+              <ul>
+                <li>
+                  <a href="#DSDINGID">DSDINGID - INGREDIENT ID NUMBER</a>
+                </li>
+                <li>
+                  <a href="#DSDINGR">DSDINGR - INGREDIENT NAME</a>
+                </li>
+                <li>
+                  <a href="#DSDBCID">DSDBCID - BLEND COMPONENT ID</a>
+                </li>
+                <li>
+                  <a href="#DSDBCNAM">DSDBCNAM - BLEND COMPONENT NAME</a>
+                </li>
+                <li>
+                  <a href="#DSDBCCAT">DSDBCCAT - BLEND COMPONENT CATEGORY</a>
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li>
+            <a href="#Appendix_1:_Rules_for_Classifying_Ingredients">Appendix 1: Rules for Classifying Ingredients</a>
+          </li>
+          <li>
+            <a href="#Appendix_2:_Conversion_Factors_for_Supplement_Nutrient_Units_to_Food_Units_and_for_Nutrient_Compounds_to_Elemental_Nutrients">Appendix 2: Conversion Factors for Supplement Nutrient Units to Food Units and for Nutrient Compounds to Elemental Nutrients</a>
+          </li>
+          <li>
+            <a href="#Appendix_3:__Proc_Format">Appendix 3:  Proc Format</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div id="wrapper">
+      <div id="PageHeader" xmlns="">
+        <h1>National Health and Nutrition Examination Survey</h1>
+        <h2>1999-2014 Data Documentation, Codebook, and Frequencies</h2>
+        <h3>Dietary Supplement Database - Blend Information (DSBI)
+			</h3>
+        <h4>
+				Data File: DSBI.xpt
+			</h4>
+        <h5 class="left">
+				First Published:
+				June 2002</h5>
+        <h5 class="right">
+				Last Revised:
+				December 2016</h5>
+      </div>
+      <div id="Sections" xmlns="">
+        <h2 id="Component_Description">Component Description</h2><p>The NHANES Dietary Supplement Database (NHANES-DSD) contains detailed information on the dietary supplements (DS) and non-prescription antacids containing calcium and/or magnesium (antacids) reported by survey participants since NHANES 1999. The NHANES-DSD release consists of three datasets containing information on products; Dietary Supplement Product Information (DSPI), Dietary Supplement Ingredient Information (DSII), and Dietary Supplement Blend Information (DSBI). </p>
+<p>Dietary supplement information from the in-house NCHS Product Label Database (PLD) is publicly released in three files that make up the NHANES-DSD. These files incorporate all products that have been reported by respondents since 1999 from the PLD. With subsequent releases, new products reported will be appended to the NHANES-DSD files. </p>
+<p>The in-house PLD database is maintained by NCHS nutritionists&rsquo;. NCHS attempts to obtain a product label for all dietary supplements or antacids reported by participants from sources such as the manufacturer or retailer, the Internet, company catalogs, and the Physician&rsquo;s Desk Reference (PDR). Recently, label information has also been obtained from The <a href="http://dsld.nlm.nih.gov/dsld/" target="_blank">Dietary Supplement Label Database (DSLD)</a>  which is a joint project of the National Institutes of Health (NIH) Office of Dietary Supplements (ODS) and National Library of Medicine (NLM). The DSLD contains the full label contents from a sample of dietary supplement products marketed in the U.S. Selected label information is then entered into the PLD including, but not limited to: supplement name; manufacturer and/or distributor; serving size; form of serving size; and ingredients and amounts. The ingredient information entered into the database is taken directly from the supplement facts box on the label or carton. The PLD is used to assist with data editing and then publicly released in the data files (DSPI, DSII, and DSBI). </p>
+<p>In addition to entering labels into the PLD database, NCHS created generic and default dietary supplements and antacids, which are also maintained in the database. Generics were created in the database when we had information about a reported supplement, such as the strength of all ingredients, but no brand name. These were generally single ingredient supplements which included a strength (e.g., vitamin C 500 mg) or multiple vitamins and/or mineral supplements made by a private label manufacturer that was known to us and for which we had a label with identical ingredients and strengths (e.g, brand X all-purpose multivitamin was reported, and we had a label for brand Y, made by the same manufacturer). When all ingredient strengths were not known, a default supplement was created in the database. Defaults were created for single ingredient and multiple ingredient supplements based on our own data of most frequently reported supplements of that type, based on the survey cycle in which the data was collected. Created default products and the actual products or strengths that were assigned to these defaults are listed in the documentation for the files associated with participants&rsquo; use of dietary supplements, located on the <a href="http://www.cdc.gov/nchs/nhanes/index.htm" target="_blank">NHANES website</a>&nbsp;under the dietary data links.  </p><h2 id="Data_Processing_and_Editing">Data Processing and Editing</h2><p>The in-house PLD was used for processing and editing of the dietary supplement data since 1999. </p>
+<p><span style="text-decoration: underline;"><strong>Variables pulled directly from the&nbsp;in-house PLD </strong></span></p>
+<p><span style="text-decoration: underline;"><strong>DSDSUPP: </strong>Name of Supplement <br />
+</span>This is the name from the front of the product label. The brand name is generally entered first (i.e., Nature&rsquo;s Way) and then the actual product name (i.e., lutein). Information such as the strength (i.e., 60 mg extract) of the product and other qualifiers that help distinguish a product from a similar product (i.e,. mega, super, high potency, time release, chewable, extract) are also listed if they are on the front of the product label. Words like &ldquo;dietary supplement&rdquo; and &ldquo;health claims&rdquo; are not entered as part of the name. </p>
+<p><span style="text-decoration: underline;"><strong>DSDSUPID:</strong> Supplement ID Number&nbsp;<br />
+</span>Supplement ID is a 10 digit identifier assigned to each product entered into the in-house PLD. All identifiable products have a supplement ID beginning with the number &lsquo;1&rsquo;. The next 3 digits (positions 2-4) are &lsquo;888&rsquo; or &lsquo;881&rsquo; if the supplement was created by NCHS as a generic or default product; otherwise the digits in positions 2-4 are coded &lsquo;000&rsquo; or &lsquo;001&rsquo;. The next 4 digits (positions 5-8) are sequentially assigned by the system for each product. The last 2 digits (positions 9-10) indicate formulations of the same supplement: the first formulation entered into the database = 00, the first reformulation = 01, the next = 02, etc. Note that these are reformulations of the same product. Different versions of products (e.g., liquid vs. tablet, with iron vs. without iron, regular vs. high potency) are considered as different products thus have different 4 digit numbers in positions 5 to 8. When a product name was entered as "no product information available," "refused," or "don't know," its ID number starts with a string of 6's. </p>
+<p><span style="text-decoration: underline;"><strong>DSDSRCE:</strong> Supplement Information Source <br />
+</span>The source of each product label is recorded into the PLD. Generic and default products do not have a source code. </p>
+<p><span style="text-decoration: underline;"><strong>DSDTYPE:</strong> Formulation Type <br />
+</span>The type of formula is recorded into the database. The formula types are: infant/pediatric formulation, prenatal formulation, mature formulation, or standard formulation. Products are coded as infant/pediatric when the product name states "infant, children, child, or kid/s" or has an indication in the title, label, or the form (e.g., animal shapes) of the supplement that it is intended for children. If this is not the case, but the suggested dose or directions indicate dosage for children only, then the code is infant/pediatric, but if dosages for adults are also included, then the product is coded as standard. Products are coded as "Prenatal" when the product name states prenatal or a derivative of this name, or has an indication in the title or label that it is intended for pregnant women. If this is not the case, but the suggested dosage or directions indicate dosage for pregnant women only, the product is coded as a prenatal, but if dosages for non-pregnant adults are also included, the product is coded as standard. Products are coded as "Geriatric" when the product name or label includes words such as "mature, senior, geriatric, post-menopausal, or silver" or indicates with other words that it is intended for individuals 50 years and over. All other products are coded as "Standard". </p>
+<p><span style="text-decoration: underline;"><strong>DSDSERVQ:</strong> Serving Size Quantity <br />
+</span>This is the &ldquo;serving size quantity,&rdquo; which is recorded from the product label&rsquo;s supplement facts panel for which the nutrient amounts are based on.</p>
+<p><span style="text-decoration: underline;"><strong>DSDSERVU:</strong> Serving Size Unit <br />
+</span>This is the &ldquo;serving size unit,&rdquo; which is recorded from the product label&rsquo;s supplement facts panel.</p>
+<p><span style="text-decoration: underline;"><strong>DSDINGID:</strong> Ingredient ID <br />
+</span>This is the unique ingredient ID created by the PLD for each ingredient recorded from the product label&rsquo;s supplement facts panel. </p>
+<p><span style="text-decoration: underline;"><strong>DSDINGR:</strong> Ingredient Name <br />
+</span>Ingredient names are recorded from the product label&rsquo;s supplement facts panel. </p>
+<p><span style="text-decoration: underline;"><strong>DSDOPER:</strong> Ingredient Operator <br />
+</span>This is a symbol =, &lt;, or &gt; that comes from the product label&rsquo;s supplement facts panel.</p>
+<p><span style="text-decoration: underline;"><strong>DSDQTY:</strong> Ingredient Quantity <br />
+</span>Ingredient quantity is recorded for each ingredient listed from the product label&rsquo;s supplement facts panel. Some nutrient amounts are for a nutrient compound (generally a foreign-made product or an antacid) and these must be converted to an elemental nutrient amount (See Appendix 2 for recommended conversions). </p>
+<p><span style="text-decoration: underline;"><strong>DSDUNIT:</strong> Ingredient Unit <br />
+</span>Ingredient unit is recorded for each ingredient listed from the product label&rsquo;s supplement facts panel.</p>
+<p><span style="text-decoration: underline;"><strong>DSDCAT:</strong> Ingredient Category <br />
+</span>There are ingredient categories: Vitamin, Mineral, Botanical, Others, Amino Acid. These are assigned by NCHS staff. (Please see Appendix 1: Rules For Classifying Ingredients)</p>
+<p><span style="text-decoration: underline;"><strong>DSDBCNAM:</strong> Blend Component Name <br />
+</span>These are the ingredient names found within a blend. Blends in products will not give the actual breakdown of ingredient quantities in the blend. The ingredients will usually just be listed, and most of the time a total blend amount is given. The blend ingredients are released in file DSBI. </p>
+<p><span style="text-decoration: underline;"><strong>DSDBCLID:</strong> Blend Component ID <br />
+</span>These are unique ingredient ID numbers for blend ingredients created by the PLD.</p>
+<p><span style="text-decoration: underline;"><strong>DSDBCCAT:</strong> Blend Component Category <br />
+</span>There are ingredient categories: Vitamin, Mineral, Botanical, Others, Amino Acid. These are assigned by NCHS staff. (Please see Appendix 1: Rules For Classifying Ingredients) </p>
+<p><span style="text-decoration: underline;"><strong>Variables created for the NHANES-DSD public release files </strong></span></p>
+<p><span style="text-decoration: underline;"><strong>
+DSDBLFLG:</strong> Blend Flag</span> <br />
+This indicator variable denotes whether an ingredient is a blend or not a blend. If the ingredient is a blend, then information from file DSBI is needed. </p>
+<p><span style="text-decoration: underline;"><strong>DSDCNTV: </strong>Number of Vitamin(s) in Supplement <br />
+</span>This variable indicates the number of vitamins in the supplement, including in blends. All ingredients categorized as &ldquo;vitamins&rdquo; in variables DSDCAT and DSDBCCAT are added up to get the number of vitamins in the product. If a product has the same vitamin listed as an ingredient as well as a blend, this vitamin was only counted once. Ingredients that are categorized as a blend (DSDBLFLG=1) in file DSII are not included in this count, but the ingredients within the blend are counted (blend ingredients in file DSBI).</p>
+<p><span style="text-decoration: underline;"><strong>DSDCNTM:</strong> Number of Mineral(s) in Supplement <br />
+</span>This variable indicates the number of minerals in the supplement, including in blends. All ingredients categorized as &ldquo;minerals&rdquo; in variables DSDCAT and DSDBCCAT are added up to get the number of minerals in the product. If a product has the same mineral listed as an ingredient as well as a blend, this mineral was only counted once. Ingredients that are categorized as a blend (DSDBLFLG=1) in file DSII are not included in this count, but the ingredients within the blend are counted (blend ingredients in file DSBI). </p>
+<p><span style="text-decoration: underline;"><strong>DSDCNTA:</strong> Number of Amino Acid(s) in Supplement  <br />
+</span>This variable indicates the number of amino acids in the supplement, including in blends. All ingredients categorized as &ldquo;amino acids&rdquo; in variables DSDCAT and DSDBCCAT are added up to get the number of amino acids in the product. Ingredients that are categorized as a blend (DSDBLFLG=1) in file DSII are not included in this count, but the ingredients within the blend are counted (blend ingredients in file DSBI). </p>
+<p><span style="text-decoration: underline;"><strong>DSDCNTB:</strong> Number of Botanical(s) in Supplement <br />
+</span>This variable indicates the number of botanicals in the supplement, including in blends. All ingredients categorized as &ldquo;botanicals&rdquo; in variables DSDCAT and DSDBCCAT are added up to get the number of botanicals in the product. Ingredients that are categorized as a blend (DSDBLFLG=1) in file DSII are not included in this count, but the ingredients within the blend are counted (blend ingredients in file DSBI).</p>
+<p><span style="text-decoration: underline;"><strong>DSDCNTO</strong>: Number of Other Ingredients in Supplement <br />
+</span>This variable indicates the number of other ingredients in the supplement, including in blends. All ingredients categorized as &ldquo;other&rdquo; in variables DSDCAT and DSDBCCAT are added up to get the number of other ingredients in the product. Ingredients that are categorized as a blend (DSDBLFLG=1) in file DSII are not included in this count, but the ingredients within the blend are counted (blend ingredients in file DSBI). </p>
+<p>The NCHS-DSD file may be linked to both the Household dietary supplement data use files and the 24-hour dietary recall interview dietary supplement files by the supplement ID number (DSDSUPID). </p>
+<p>Currently, NCHS-DSD contains information on all DS and antacids reported since 1999. New products will be appended as they are reported in future data releases. There are three files. The 'Supplement Information' file (DSPI) and the 'Ingredient Information' file (DSII) can be linked by supplement ID number (DSDSUPID) which is a unique product identifier. The 'Ingredient Information' file (DSII) and the 'Supplement Blend' file (DSBI) can then be linked by the ingredient ID number (DSDINGID).</p>
+<p style="text-align: center;"><strong>Layout of DSQ_DSD</strong></p>
+<p>
+</p>
+<table bordercolor="#000000" border="1">
+    <caption align="left" valign="top"><strong>(DSPI): Supplement Product Information</strong></caption>
+    <thead>
+        <tr>
+            <th>Variable Name</th>
+            <th>Label</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>DSDSUPID</td>
+            <td>Supplement ID number</td>
+        </tr>
+        <tr>
+            <td>DSDSUPP</td>
+            <td>Supplement Name</td>
+        </tr>
+        <tr>
+            <td>DSDSRCE</td>
+            <td>Supplement Information Source</td>
+        </tr>
+        <tr>
+            <td>DSDTYPE</td>
+            <td>Formulation Type</td>
+        </tr>
+        <tr>
+            <td>DSDSERVQ</td>
+            <td>Serving Size Quantity</td>
+        </tr>
+        <tr>
+            <td>DSDSERVU</td>
+            <td>Serving Size Unit</td>
+        </tr>
+        <tr>
+            <td>DSDCNTV</td>
+            <td>Count of Vitamins in the Supplement</td>
+        </tr>
+        <tr>
+            <td>DSDCNTM</td>
+            <td>Count of Minerals in the Supplement</td>
+        </tr>
+        <tr>
+            <td>DSDCNTA</td>
+            <td>Count of Amino Acids in the Supplement</td>
+        </tr>
+        <tr>
+            <td>DSDCNTB</td>
+            <td>Count of Botanicals in the Supplement</td>
+        </tr>
+        <tr>
+            <td>DSDCNTO</td>
+            <td>Count of Other Ingredients in the Supplement</td>
+        </tr>
+    </tbody>
+</table>
+<p>&nbsp;</p>
+<table bordercolor="#000000" border="1">
+    <caption align="left" valign="top"><strong>(DSII): Supplement Ingredient Information</strong></caption>
+    <thead>
+        <tr>
+            <th>Variable Name</th>
+            <th>Label</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>DSQSUPID</td>
+            <td>Supplement ID Number</td>
+        </tr>
+        <tr>
+            <td>DSQSUPP</td>
+            <td>Supplement Name</td>
+        </tr>
+        <tr>
+            <td>DSDINGID</td>
+            <td>Ingredient ID Number</td>
+        </tr>
+        <tr>
+            <td>DSDINGR</td>
+            <td>Ingredient Name</td>
+        </tr>
+        <tr>
+            <td>DSDOPER</td>
+            <td>Ingredient Operator (&lt;, =, &gt;)</td>
+        </tr>
+        <tr>
+            <td>DSDQTY</td>
+            <td>Ingredient Quantity</td>
+        </tr>
+        <tr>
+            <td>DSDUNIT</td>
+            <td>Ingredient Unit</td>
+        </tr>
+        <tr>
+            <td>DSDCAT</td>
+            <td>Ingredient Category</td>
+        </tr>
+        <tr>
+            <td>DSDBLFLG</td>
+            <td>Blend Flag</td>
+        </tr>
+    </tbody>
+</table>
+<p>&nbsp;</p>
+<p>
+</p>
+<table bordercolor="#000000" border="1">
+    <caption align="left" valign="top"><strong>(DSBI): Supplement Blend Information</strong></caption>
+    <thead>
+        <tr>
+            <th>Variable Name</th>
+            <th>Label</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>DSDINGID</td>
+            <td>Ingredient ID Number</td>
+        </tr>
+        <tr>
+            <td>DSDINGR</td>
+            <td>Ingredient Name</td>
+        </tr>
+        <tr>
+            <td>DSDBCID</td>
+            <td>Blend Component ID Number</td>
+        </tr>
+        <tr>
+            <td>DSDBCNAM</td>
+            <td>Blend Component Name</td>
+        </tr>
+        <tr>
+            <td>DSDBCCAT</td>
+            <td>Blend Component Category</td>
+        </tr>
+    </tbody>
+</table>
+<p>&nbsp;</p><h2 id="Analytic_Notes">Analytic Notes</h2><p><span style="text-decoration: underline;"><strong>Source of Product Information <br />
+</strong></span>The best source of product information is the label itself, but when this cannot be obtained, other sources are used. Information from other sources may not always be an accurate reflection of what is actually on the supplement label. This is true for the supplement&rsquo;s apparent name as well as for the ingredients. The apparent name on the container is most important, since interviewers see the supplement container and record the name as it appears to them. Differences from what appears on the label are particularly noted for information from the Internet (name and ingredients), the PDR (name), and supplement carton (name). In addition, supplement companies may change the appearance of a label and thus the apparent name without changing the content or may change content with minimal change to the label, or may change both. NCHS attempts to obtain updated labels as they come onto the market, but cannot guarantee complete success. The source of the supplement information is included in the data release. </p>
+<p><span style="text-decoration: underline;"><strong>Using Self-Reported Data <br />
+</strong></span>NHANES data are self-reported and recorded by interviewers, and thus may contain inconsistencies or errors. Some inconsistencies have been edited; however, users may notice situations that still need editing. Users are advised to assess the data and edit it as deemed appropriate for the analyses being undertaken.</p></div>
+      <div id="Codebook" xmlns="">
+        <h2>Codebook and Frequencies</h2>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="DSDINGID">DSDINGID - INGREDIENT ID NUMBER</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">DSDINGID</dd>
+            <dt>SAS Label: </dt>
+            <dd>INGREDIENT ID NUMBER</dd>
+            <dt>English Text: </dt>
+            <dd class="info">Ingredient ID</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">INGREDIENT ID NUMBER</td>
+                <td class="values">Value was recorded</td>
+                <td class="values" align="right">20585</td>
+                <td class="values" align="right">20585</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">&lt; blank &gt;</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">0</td>
+                <td class="values" align="right">20585</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="DSDINGR">DSDINGR - INGREDIENT NAME</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">DSDINGR</dd>
+            <dt>SAS Label: </dt>
+            <dd>INGREDIENT NAME</dd>
+            <dt>English Text: </dt>
+            <dd class="info">Ingredient Name</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">INGREDIENT NAME</td>
+                <td class="values">Value was recorded</td>
+                <td class="values" align="right">20585</td>
+                <td class="values" align="right">20585</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">&lt; blank &gt;</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">0</td>
+                <td class="values" align="right">20585</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="DSDBCID">DSDBCID - BLEND COMPONENT ID</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">DSDBCID</dd>
+            <dt>SAS Label: </dt>
+            <dd>BLEND COMPONENT ID</dd>
+            <dt>English Text: </dt>
+            <dd class="info">Blend component ID</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">BLEND COMPONENT ID</td>
+                <td class="values">Value was recorded</td>
+                <td class="values" align="right">20585</td>
+                <td class="values" align="right">20585</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">&lt; blank &gt;</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">0</td>
+                <td class="values" align="right">20585</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="DSDBCNAM">DSDBCNAM - BLEND COMPONENT NAME</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">DSDBCNAM</dd>
+            <dt>SAS Label: </dt>
+            <dd>BLEND COMPONENT NAME</dd>
+            <dt>English Text: </dt>
+            <dd class="info">Blend component name</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">BLEND COMPONENT NAME</td>
+                <td class="values">Value was recorded</td>
+                <td class="values" align="right">20585</td>
+                <td class="values" align="right">20585</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">&lt; blank &gt;</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">0</td>
+                <td class="values" align="right">20585</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagebreak">
+          <h3 class="vartitle" id="DSDBCCAT">DSDBCCAT - BLEND COMPONENT CATEGORY</h3>
+          <dl>
+            <dt>Variable Name: </dt>
+            <dd class="info">DSDBCCAT</dd>
+            <dt>SAS Label: </dt>
+            <dd>BLEND COMPONENT CATEGORY</dd>
+            <dt>English Text: </dt>
+            <dd class="info">Blend component category</dd>
+          </dl>
+          <table class="values">
+            <thead>
+              <tr>
+                <th scope="column" class="values">Code or Value</th>
+                <th scope="column" class="values">Value Description</th>
+                <th scope="column" class="values">Count</th>
+                <th scope="column" class="values">Cumulative</th>
+                <th scope="column" class="values">Skip to Item</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row" class="values">1</td>
+                <td class="values">Vitamin</td>
+                <td class="values" align="right">313</td>
+                <td class="values" align="right">313</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">2</td>
+                <td class="values">Mineral</td>
+                <td class="values" align="right">1535</td>
+                <td class="values" align="right">1848</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">3</td>
+                <td class="values">Botanical</td>
+                <td class="values" align="right">12176</td>
+                <td class="values" align="right">14024</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">4</td>
+                <td class="values">Other</td>
+                <td class="values" align="right">5293</td>
+                <td class="values" align="right">19317</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">5</td>
+                <td class="values">Amino acid</td>
+                <td class="values" align="right">1268</td>
+                <td class="values" align="right">20585</td>
+                <td class="values">
+                </td>
+              </tr>
+              <tr>
+                <td scope="row" class="values">.</td>
+                <td class="values">Missing</td>
+                <td class="values" align="right">0</td>
+                <td class="values" align="right">20585</td>
+                <td class="values">
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+      <div id="Appendices" xmlns="">
+        <div id="Appendix">
+          <h2 id="Appendix_1:_Rules_for_Classifying_Ingredients">Appendix 1: Rules for Classifying Ingredients</h2><p><strong><span style="text-decoration: underline;">VITAMINS <br />
+</span></strong>An ingredient is classified as a vitamin if it is: </p>
+<ul>
+    <li>A single vitamin listed by its name (e.g., vitamin A) </li>
+    <li>A standard chemical form of the vitamin (retinol, retinal, retinoic acid) in synthetic or natural form</li>
+</ul>
+<p><strong>A vitamin will be classified as "other" when it exists as: </strong></p>
+<ul>
+    <li>A precursor or provitamin to the active form of the vitamin (e.g., 7-dehydrocholesterol, a precursor to Vitamin D)</li>
+    <li>A complex, since the ingredient content is unclear (e.g., B-complex) </li>
+</ul>
+<p><strong>The following appear in supplements as a source of vitamins and are therefore classified as a vitamin:&nbsp;</strong></p>
+<ul>
+    <li>Vitamin A: palmitate, vitamin A acetate, vitamin A palmitate&nbsp;</li>
+    <li>Vitamin B-1/Thiamin: thiamin monophosphate or TMP, thiamin mononitrate, thiamin hydrochloride&nbsp;</li>
+    <li>Vitamin B-2/Riboflavin: riboflavin mononitrate, riboflavin-5-phosphate sodium&nbsp;</li>
+    <li>Vitamin B-3/Niacin&nbsp;</li>
+    <li>Vitamin B-5/Pantothenic Acid: pantothenate, calcium pantothenate&nbsp;</li>
+    <li>Vitamin B-6: pyridoxine hydrochloride, vitamin B6 hydrochloride&nbsp;</li>
+    <li>Vitamin B-12/Cobalamin: cyanocobalamin&nbsp;</li>
+    <li>Vitamin C/Ascorbic Acid: ascorbyl palmitate, sodium ascorbate&nbsp;</li>
+    <li>Vitamin D/Calciferol: cholecalciferol, ergocalciferol, calcitriol&nbsp;</li>
+    <li>Vitamin E/Tocopherol: d-alpha tocopheryl acid succinate, dl-alpha tocopheryl acetate, d-alpha tocopheryl acetate, d-alpha tocopherol, d-alpha tocopheryl, tocopherols, mixed tocopherols, vitamin E acetate, tocotrienol&nbsp;</li>
+    <li>Vitamin K/Menadione: phytonadione&nbsp;</li>
+    <li>Biotin: Choline, choline bitartrate&nbsp;</li>
+    <li>Folic Acid/Folate </li>
+</ul>
+<p><strong><span style="text-decoration: underline;">MINERALS </span></strong></p>
+<p><strong>An ingredient is classified as a mineral if it is a macro or micromineral (trace element): </strong></p>
+<ul>
+    <li>in its elemental form (e.g., iron)&nbsp;</li>
+    <li>is the source of the mineral in a supplement (e.g., ferrous gluconate, potassium iodide, nickel chloride)</li>
+</ul>
+<p><strong>An ingredient containing a mineral is classified as "other" when it is: </strong></p>
+<ul>
+    <li>an enzyme (e.g., boron protease)&nbsp;</li>
+    <li>a complex, since the ingredient content is unclear (e.g., Trace Mineral Complex)&nbsp;<br />
+    used as an electrolyte (chloride, potassium, sodium) </li>
+</ul>
+<p><strong>The following are classified as minerals: </strong></p>
+<ul>
+    <li>Arsenic</li>
+    <li>Copper </li>
+    <li>Phosphorus </li>
+    <li>Barium </li>
+    <li>Fluoride </li>
+    <li>Selenium </li>
+    <li>Boron </li>
+    <li>Iodine </li>
+    <li>Silicon </li>
+    <li>Bromine</li>
+    <li>Iron </li>
+    <li>Strontium </li>
+    <li>Cadmium </li>
+    <li>Magnesium</li>
+    <li>Sulfur</li>
+    <li>Calcium </li>
+    <li>Manganese </li>
+    <li>Tin</li>
+    <li>Chromium </li>
+    <li>Molybdenum </li>
+    <li>Vanadium </li>
+    <li>Cobalt</li>
+    <li>Nickel </li>
+    <li>Zinc </li>
+</ul>
+<p><strong><span style="text-decoration: underline;">BOTANICALS</span></strong></p>
+<p><strong>An ingredient is classified as a botanical if it is: </strong></p>
+<ul>
+    <li>part of a plant, tree, shrub, herb, etc. </li>
+</ul>
+<p><strong>Botanicals may include the following words: </strong></p>
+<ul>
+    <li>Extract, Powder </li>
+    <li>Leaf, Root, Flower, Stem, Peel, Fruit </li>
+    <li>Component of a botanical that specifically mentions it is from the plant (e.g., soy isoflavones, citrus bioflavonoids) </li>
+</ul>
+<p><strong>An ingredient containing a botanical is classified as "other" if it is: </strong></p>
+<ul>
+    <li>listed only as an unspecified blend </li>
+    <li>a chemical structure derived originally from a botanical (e.g., bromelain, the enzyme found in pineapple; Alliin, a phytochemical in garlic; apple cider vinegar) </li>
+</ul>
+<p><strong><span style="text-decoration: underline;">AMINO ACIDS </span></strong></p>
+<p><strong>An ingredient is classified as an amino acid if it is an essential or nonessential amino acid. It can exist in:</strong></p>
+<ul>
+    <li>it&rsquo;s free form (e.g., lycine, glutamine) </li>
+    <li>its post-translational form with one or two added groups (e.g., Cystine, Hydroxylysine, Hydroxyproline, Dimethylglycine, and 3-methylhistidine) </li>
+    <li>one of its isomeric forms (e.g., l-tyrosine) </li>
+    <li>the source of an amino acid in a supplement (e.g., l-lysine monohydrochloride, glutamic acid hydrochloride) </li>
+</ul>
+<p><strong>An amino acid would be classified as "other" if it is: </strong></p>
+<ul>
+    <li>in its post-translational form with three or more added groups (Trimethylglycine, Tetramethylglycine, etc.) </li>
+    <li>an alpha-keto acid (an amino acid with its amino group, NH3, replaced by a keto group) (e.g., -ketoglutarate) </li>
+    <li>a residue of an amino acid (-carboxyglutamic acid also known as GLA) </li>
+    <li>as a complex of amino acids (e.g., natural amino acid complex), since the ingredient content is unclear </li>
+</ul>
+<p>The following are classified as amino acids: </p>
+<ul>
+    <li>Alanine</li>
+    <li>Glycine </li>
+    <li>Proline </li>
+    <li>Arginine </li>
+    <li>Histidine </li>
+    <li>Serine </li>
+    <li>Asparagine </li>
+    <li>Isoleucine </li>
+    <li>Taurine </li>
+    <li>Aspartic</li>
+    <li>Acid </li>
+    <li>Leucine </li>
+    <li>Threonine </li>
+    <li>Cysteine </li>
+    <li>Lysine </li>
+    <li>Tryptophan</li>
+    <li>Glutamic </li>
+    <li>Acid </li>
+    <li>Methionine </li>
+    <li>Tyrosine</li>
+    <li>Glutamine </li>
+    <li>Phenylalanine </li>
+    <li>Valine </li>
+</ul>
+<p><strong><span style="text-decoration: underline;">OTHER</span></strong></p>
+<p>The following are examples of ingredients that would be classified as "other": </p>
+<ul>
+    <li>an electrolyte (e.g., chloride, potassium, sodium) </li>
+    <li>a hormone (e.g., DHEA, cholesterol), unless if it is the active form of a vitamin (calcitriol) </li>
+    <li>an enzyme (e.g., cellulase, glucoamylase) </li>
+    <li>Complexes and blends (unless all components are of the same type ex. amino acid blend) </li>
+    <li>Bioflavonoids and Isoflavones (if not associated with a plant, in which case it would be classified as a Botanical) </li>
+    <li>Vinegars </li>
+    <li>Phytochemicals (e.g., lutein, allin) </li>
+    <li>Vitamin precursors (e.g., some carotenoids) </li>
+</ul></div>
+        <div id="Appendix">
+          <h2 id="Appendix_2:_Conversion_Factors_for_Supplement_Nutrient_Units_to_Food_Units_and_for_Nutrient_Compounds_to_Elemental_Nutrients">Appendix 2: Conversion Factors for Supplement Nutrient Units to Food Units and for Nutrient Compounds to Elemental Nutrients</h2><table bordercolor="#000000" border="1">
+    <thead>
+        <tr>
+            <th>INGREDIENT</th>
+            <th>INGREDIENT_ID</th>
+            <th>CONVERSION FACTOR</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td><strong>Vitamin A Conversion Factor</strong></td>
+            <td> </td>
+            <td> </td>
+        </tr>
+        <tr>
+            <td>ALPHA CAROTENE</td>
+            <td>10000656</td>
+            <td>1 IU alpha carotene = 7.2 mcg vitamin A</td>
+        </tr>
+        <tr>
+            <td>ALPHA CAROTENE</td>
+            <td>10000656</td>
+            <td>1 RAE = 24 mcg alpha carotene</td>
+        </tr>
+        <tr>
+            <td>BETA CAROTENE</td>
+            <td>10000433</td>
+            <td>1 IU beta carotene = 0.6 mcg vitamin A</td>
+        </tr>
+        <tr>
+            <td>BETA CAROTENE</td>
+            <td>10000433</td>
+            <td>1667 IU beta carotene = 1 mg beta carotene</td>
+        </tr>
+        <tr>
+            <td>BETA CAROTENE</td>
+            <td>10000433</td>
+            <td>1 RAE = 12 mcg beta carotene</td>
+        </tr>
+        <tr>
+            <td>VITAMIN A*</td>
+            <td>10000381</td>
+            <td>1 IU = 0.3 mcg vitamin A</td>
+        </tr>
+        <tr>
+            <td>VITAMIN A*</td>
+            <td>10000381</td>
+            <td>1 RAE = 1 mcg vitamin A</td>
+        </tr>
+        <tr>
+            <td>CRYPTOXANTHIN</td>
+            <td>10000686</td>
+            <td>1 RAE = 24 mcg cryptoxanthin</td>
+        </tr>
+        <tr>
+            <td><strong>Vitamin D Conversion Factor</strong></td>
+            <td> </td>
+            <td> </td>
+        </tr>
+        <tr>
+            <td>VITAMIN D&dagger;</td>
+            <td>10000385</td>
+            <td>40 IU vitamin D = 1 mcg</td>
+        </tr>
+        <tr>
+            <td><strong>Vitamin E</strong></td>
+            <td> </td>
+            <td> </td>
+        </tr>
+        <tr>
+            <td>VITAMIN E&Dagger;</td>
+            <td>10000386</td>
+            <td>1 IU = 0.67 mg vitamin E</td>
+        </tr>
+        <tr>
+            <td><strong>Calcium Conversion Factors</strong></td>
+            <td> </td>
+            <td> </td>
+        </tr>
+        <tr>
+            <td>CALCIUM CARBONATE</td>
+            <td>10000611</td>
+            <td>40% elemental calcium</td>
+        </tr>
+        <tr>
+            <td>CALCIUM L-THREONATE</td>
+            <td>10004220</td>
+            <td>12.9 % elemental calcium</td>
+        </tr>
+        <tr>
+            <td>CALCIUM PANTOTHENATE</td>
+            <td>10000437</td>
+            <td>91.6% pantothenate</td>
+        </tr>
+        <tr>
+            <td><strong>Iron Conversion Factor</strong></td>
+            <td> </td>
+            <td> </td>
+        </tr>
+        <tr>
+            <td>FERROUS FUMARATE</td>
+            <td>10000863</td>
+            <td>32.9% elemental iron</td>
+        </tr>
+        <tr>
+            <td><strong>Glucosamine Conversion Factors</strong></td>
+            <td> </td>
+            <td> </td>
+        </tr>
+        <tr>
+            <td>GLUCOSAMINE HYDROCHLORIDE</td>
+            <td>10000453</td>
+            <td>83.0% glucosamine</td>
+        </tr>
+        <tr>
+            <td>GLUCOSAMINE SULFATE</td>
+            <td>10000157</td>
+            <td>65% glucosamine</td>
+        </tr>
+        <tr>
+            <td>GLUCOSAMINE SULFATE .2 KCL</td>
+            <td>10000935</td>
+            <td>29.6% glucosamine</td>
+        </tr>
+        <tr>
+            <td>D-GLUCOSAMINE SULFATE.2 NACL</td>
+            <td>10001109</td>
+            <td>31.3% glucosamine</td>
+        </tr>
+        <tr>
+            <td><strong>Magnesium Conversion Factors</strong></td>
+            <td> </td>
+            <td> </td>
+        </tr>
+        <tr>
+            <td>MAGNESIUM CARBONATE</td>
+            <td>10000625</td>
+            <td>28.9% elemental magnesium</td>
+        </tr>
+        <tr>
+            <td>MAGNESIUM HYDROXIDE</td>
+            <td>10000612</td>
+            <td>41.7% elemental magnesium</td>
+        </tr>
+        <tr>
+            <td>MAGNESIUM PHOSPHATE TRIBASIC</td>
+            <td>10000688</td>
+            <td>27.7% elemental magnesium</td>
+        </tr>
+        <tr>
+            <td>MAGNESIUM TRISILICATE</td>
+            <td>10002215</td>
+            <td>18.3 % elemental magnesium</td>
+        </tr>
+        <tr>
+            <td><strong>Vitamin B-6 Conversion Factor</strong></td>
+            <td> </td>
+            <td> </td>
+        </tr>
+        <tr>
+            <td>PYRIDOXINE HYDROCHLORIDE</td>
+            <td>10000523</td>
+            <td>82% vitamin B-6</td>
+        </tr>
+        <tr>
+            <td><strong>Other</strong></td>
+            <td> </td>
+            <td> </td>
+        </tr>
+        <tr>
+            <td>CHROMIUM PICOLINATE</td>
+            <td>10000541</td>
+            <td>12.4% elemental chromium</td>
+        </tr>
+        <tr>
+            <td>CHOLINE BITARATE</td>
+            <td>10000091</td>
+            <td>41% choline</td>
+        </tr>
+        <tr>
+            <td>CHOLINE CITRATE</td>
+            <td>10002418</td>
+            <td>41% choline</td>
+        </tr>
+        <tr>
+            <td>CREATINE MONOHYDRATE</td>
+            <td>10000533</td>
+            <td>88% creatine</td>
+        </tr>
+        <tr>
+            <td>CYSTEINE HCL</td>
+            <td>10000857</td>
+            <td>76.9% cysteine</td>
+        </tr>
+        <tr>
+            <td>DOCUSATE SODIUM</td>
+            <td>10000122</td>
+            <td>5.1% sodium</td>
+        </tr>
+        <tr>
+            <td>GLUTAMIC ACID HYDROCLORIDE</td>
+            <td>10000725</td>
+            <td>80.1% glutamic acid</td>
+        </tr>
+        <tr>
+            <td>L-CYSTEINE HCL</td>
+            <td>10000542</td>
+            <td>69.0% cysteine</td>
+        </tr>
+        <tr>
+            <td>L-GLUTAMIC ACID HCL</td>
+            <td>10000683</td>
+            <td>80.1% glutamic acid</td>
+        </tr>
+        <tr>
+            <td>L-LYSINE HCL</td>
+            <td>10000820</td>
+            <td>80.03% lysine</td>
+        </tr>
+        <tr>
+            <td>LYSINE HYDROCHLORIDE</td>
+            <td>10002249</td>
+            <td>80.03% lysine</td>
+        </tr>
+        <tr>
+            <td>POTASSIUM CHOLRIDE</td>
+            <td>10000305</td>
+            <td>52.5% elemental potassium</td>
+        </tr>
+        <tr>
+            <td>POTASSIUM PHOSPHATE</td>
+            <td>10000644</td>
+            <td>28.7% elemental potassium</td>
+        </tr>
+        <tr>
+            <td>POTASSIUM PHOSPHATE MONOBASIC</td>
+            <td>10000687</td>
+            <td>28.7% elemental potassium</td>
+        </tr>
+        <tr>
+            <td>THIAMIN MONONITRATE</td>
+            <td>10000520</td>
+            <td>92% thiamin</td>
+        </tr>
+        <tr>
+            <td>ZINC PICOLINATE</td>
+            <td>10002820</td>
+            <td>21.1% elemental zinc</td>
+        </tr>
+        <tr>
+            <td><strong>Basic Unit Conversion</strong></td>
+            <td> </td>
+            <td> </td>
+        </tr>
+        <tr>
+            <td>1 gm = 1000 mg</td>
+            <td> </td>
+            <td> </td>
+        </tr>
+        <tr>
+            <td>1 mg = 1000 mcg</td>
+            <td> </td>
+            <td> </td>
+        </tr>
+    </tbody>
+</table>
+<p>&nbsp;</p>
+<p style="margin: 0in 0in 0pt 0.1in;"><span style="font-family: 'arial','sans-serif'; font-size: 11pt;">*&nbsp; Conversion factor used for Vitamin A is Retinol, most common form</span></p>
+<p style="margin: 0in 0in 0pt 0.1in;"><span style="font-family: 'arial','sans-serif'; font-size: 11pt;">&dagger; Conversion factor for Calciferol</span></p>
+<p style="margin: 0in 0in 0pt 0.1in;"><span style="font-family: 'arial','sans-serif'; font-size: 11pt;">&Dagger; Conversion factor for Alpha Tocopherol, most common form</span></p></div>
+        <div id="Appendix">
+          <h2 id="Appendix_3:__Proc_Format">Appendix 3:  Proc Format</h2><pre>PROC  FORMAT; </pre>
+<pre>/*********  variable DSD010 and DSD010AN  ********/
+   VALUE  DSD010F
+   1  = "Yes"
+   2  = "No"
+   7  = "Refused"
+   9  = "Don't Know"
+   .  = "Missing"
+   ;</pre>
+<pre>/*********  variable DSDCOUNT  ********/
+   VALUE  DSDCNTF
+   77  = "Refused"
+   99  = "Don't know"
+   ;
+   /*********  variable DSD070  ********/
+   VALUE  DSD070F
+   1  = "Yes"
+   2  = "No"
+   ;
+   /*********  variable DSDDAY1 and DSDDAY2  ********/
+   VALUE  DSDDAYF
+   1  = "Yes"
+   2  = "No"
+   ;
+   /*********  variable DSDMTCH ********/ 
+   VALUE  DSDMTCHF
+   1  = "Exact or near exact match"
+   2  = "Probable match"
+   3  = "Generic match"
+   4  = "Reasonable match"
+   5  = "Default match"
+   6  = "No match"
+   7  = "Refused"
+   9  = "Don't know"
+   ;</pre>
+<pre>  /********* variable  DSD122U ********/
+   VALUE  DSD122UF
+   1=  "Tablets, capsules, pills, caplets, softgels, gelcaps,  vegicaps"  
+   2=  "Droppers"  
+   3=  "Drops"  
+   5=  "Injections/Shots"  
+   6=  "Lozenges"  
+   7=  "Milliliters"  
+   11=  "Tablespoons"  
+   12=  "Teaspoons"  
+   13=  "Wafers"  
+   15=  "Cans"  
+   16=  "Grams"  
+   17=  "Dots"  
+   18=  "Cups"  
+   19=  "Spray/Squirts"  
+   20=  "Chews"  
+   21=  "Scoop"  
+   22=  "CC"  
+   23=  "Capful"  
+   24=  "MG"  
+   25=  "Units"  
+   26=  "Gulp"  
+   27=  "Ounces"  
+   28=  "Packages/Packets"  
+   29=  "Vial"  
+   30=  "Gumball" 
+   31=  "Strips"
+   77=  "Refused"  
+   99=  "Don't know" 
+   ;
+   /*********  variable DSDANTA********/ 
+   VALUE  DSDANTAF 
+   0=  "Non-antacid supplement"  
+   1=  "Antacid reported with dietary supplements(DSQ)"  
+   2=  "Antacid reported with medications(RXQ)" 
+   ;
+   /*********  variable DSD124 ********/
+   VALUE  DSD124F
+   1  =  "Decided to take  it for reasons of my own"   
+   2  =  "A doctor or  other health provider told me to"    
+   7  =  "Refused"   
+   9  =  "Don't know"
+   ;
+   /*********  variable RXQ215A********/ 
+   VALUE  RXQ215AF
+   1  =  "Antacid"   
+   2  =  "Calcium  Supplement"  
+   3  =  "Both"   
+   4  =  "Neither"
+   7  =  "Refused"   
+   9  =  "Don't know"
+   ;</pre>
+<pre>/*********  variable DSDSRCE ********/
+   VALUE  DSDSRCEF
+   1  =   "Directly from  manufacturer"
+   2  =   "Directly from  distributor"
+   4  =   "Inferred from  supplement name"
+   5  =   "Physician s Desk  Reference (PDR)"
+   7  =   "Product  Catalog"
+   8  =   "Internet  Listing"
+   9  =   "Supplement label  or carton"
+   10  = "Supplement from same manufacturer"
+   7777  = "Refused"
+   9999  = "Don't know"
+   ;
+   /*********  variable DSDTYPE ********/
+   VALUE  DSDTYPEF
+   1=  "Infant/pediatric formulation"  
+   2=  "Prenatal formulation"  
+   3=  "Mature formulation"  
+   4=  "Standard formulation" 
+   7777  = "Refused"
+   9999  = "Don't know"
+   ;
+   /*********  variable DSDSERVU ********/
+   VALUE  DSDSRVF
+   1=  "Caplet"  
+   2=  "Capsule"  
+   3=  "Dropper"  
+   4=  "Drop"  
+   5=  "Fluid Ounce"  
+   6=  "Gel Cap"  
+   8=  "Injection/Shot"  
+   9=  "Lozenge"  
+   10=  "Milliliter"  
+   12=  "Package/Packet"  
+   13=  "Pill"  
+   14=  "Tablespoon/Powder"  
+   16=  "Softgel"  
+   17=  "Tablespoon/Liquid"  
+   18=  "Tablet"  
+   19=  "Teaspoon/Liquid"  
+   20=  "Wafer"  
+   21=  "Ounce/Powder"  
+   22=  "Spray/Squirt"  
+   24=  "Scoop/Powder"  
+   25=  "Cup/Powder"  
+   27=  "Chew"  
+   29=  "Vegicap"  
+   30=  "Can/Liquid"  
+   31=  "Capful"  
+   32=  "Gumball"  
+   33=  "Gram/Powder"  
+   34=  "Teaspoon/Powder"  
+   35=  "Can/Powder"  
+   36=  "Scoop/Liquid"  
+   37=  "Cup/Liquid"  
+   38=  "Gram/Liquid"  
+   39=  "Drop/Lozenge"  
+   42=  "Strip"
+   99=  "Unknown" 
+   ;
+   /*********  variable DSDUNIT ********/
+   VALUE  DSDUNTF
+   1=  "mg"  
+   2=  "IU"  
+   3=  "%"  
+   4=  "mcg"  
+   5=  "gm"  
+   6=  "mL"  
+   7=  "kcal"  
+   8=  "DU"  
+   9=  "HUT"  
+   10=  "LU"  
+   11=  "CU"  
+   12=  "endo-PGO"  
+   13=  "AGU"  
+   14=  "PPM"  
+   15=  "Million"  
+   16=  "Billion"  
+   17=  "LacU"  
+   18=  "X"  
+   19=  "PPB"  
+   20=  "Trace"  
+   21=  "Unknown"  
+   22=  "PU"  
+   23=  "SEU"  
+   24=  "InvU"  
+   25=  "°DP"  
+   26=  "HCU"  
+   27=  "CFU"  
+   28=  "GALU"  
+   29=  "ALU"  
+   30=  "FTU"  
+   31=  "NG" 
+   ;
+   /*********  variable DSDCAT ********/
+   VALUE  DSDCATF
+   1  = "vitamin"
+   2  = "mineral"
+   3  = "botanical"
+   4  = "other"
+   5  = "amino acid"
+   7777  = "Refused"
+   9999  = "Don't know"
+   ;
+   /*********  variable DSDBLFLG ********/
+   VALUE  DSDBLF
+   1  = "Ingredient is a blend"
+   2  = "Ingredient is not a blend"
+   ;</pre>
+</div>
+      </div>
+    </div>
+  </body>
+</html>
